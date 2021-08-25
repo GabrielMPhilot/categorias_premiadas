@@ -58,7 +58,7 @@ st.sidebar.write('#')
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat_01_m01top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m01)
@@ -72,7 +72,7 @@ expander_cont.dataframe(cat_01_m01)
 
 """
 
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat_01_m02top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m02)
@@ -86,7 +86,7 @@ expander_cont.dataframe(cat_01_m02)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat_01_m03top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m03)
@@ -108,7 +108,7 @@ expander_cont.dataframe(cat_01_m03)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat02m1top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat02m1)
@@ -130,7 +130,7 @@ e a utilização o tempo de correção do segundo parâmetro, assim buscando med
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat02m2top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat02m2)
@@ -143,7 +143,7 @@ expander_cont.dataframe(cat02m2)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat02m3top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat02m3)
@@ -166,7 +166,7 @@ Tempo desde imprimir a folha até o final do fluxo da mesma (estimativa 5s por f
 
 """
 
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat03m1top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat03m1)
@@ -181,7 +181,7 @@ expander_cont.dataframe(cat03m1)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat03m2top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat03m2)
@@ -195,7 +195,7 @@ expander_cont.dataframe(cat03m2)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat03m3top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat03m3)
@@ -209,7 +209,7 @@ expander_cont.dataframe(cat03m3)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat03m4top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat03m4)
@@ -223,7 +223,7 @@ expander_cont.dataframe(cat03m4)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat03m5top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat03m5)
@@ -248,7 +248,7 @@ expander_cont.dataframe(cat03m5)
 
 """
 
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(catego4m01top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(catego4m01)
@@ -262,7 +262,7 @@ expander_cont.dataframe(catego4m01)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(catego4m02top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(catego4m02)
@@ -276,7 +276,7 @@ expander_cont.dataframe(catego4m02)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(catego4m03top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(catego4m03)
@@ -290,7 +290,7 @@ expander_cont.dataframe(catego4m03)
 """
 
 """
-expander_cont = st.expander(" (Top 10)  -> (clique aqui 🖱️)")
+expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(catego4m04top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(catego4m04)
