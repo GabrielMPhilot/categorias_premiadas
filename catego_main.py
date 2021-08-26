@@ -104,7 +104,14 @@ expander_cont.dataframe(cat_01_m03)
 """
 #### 📝 Média de exercícios selecionados, curados ou criados
 """
-
+"""
+#### Obs sobre esse parâmetro: 
+Não recomendamos a utilização do parâmetro de Média de exercícios selecionados, curados ou criados diretamente pois existem casos como o
+fundacaobradesco (entre outros) que tem poucos professores, baixo engajamento de alunos, sobem um monte de questões que nem
+são respondidas durante um bom tempo. É melhor usar o parâmetro que criamos  (**Sugestão Data Science**) que envolve criação de exercícios
+e a utilização o tempo de correção do segundo parâmetro, assim buscando mediar a criação versus a utilização. Mas vamos deixar aqui os dados 
+individuais caso queira utilizar.
+"""
 """
 
 """
@@ -113,13 +120,7 @@ expander_cont.table(cat02m1top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat02m1)
 
-"""
-#### Obs sobre esse parâmetro: 
-Foi visualizado que esse parâmetro tem um certo problema, escolas como por exemplo:
-fundacaobradesco e outras tem poucos professores, baixo engajamento de alunos, sobem um monte de questões que nem
-são respondidas durante um bom tempo, para contornar essa pontuação criamos um paramêtro (**Sugestão Data Science**) que envolve criação de exercícios
-e a utilização o tempo de correção do segundo parâmetro, assim buscando mediar a criação versus a utilização.
-"""
+
 #cat02m1top20
  
 #  Tempo economizado com correções automáticas
@@ -271,11 +272,15 @@ expander_cont.dataframe(catego4m02)
 """
 #### 💎 Variação de conteúdos (Cadernos)
 
-
 """
 """
 
 """
+expander_cont = st.expander(" Como foi obitida a pontuação -> (clique aqui 🖱️)")
+expander_cont.write("Nesse parâmetro foi utilizado a variabilidade de tipos de conteúdos subidos no caderno como critério de pontuação, por último foi utilizado em fator bem pequeno (para desempate) a quantidade de conteúdos subidos. Em mais detalhes foi calculado da seguinte maneira: Para verificarmos se o professor de fato faz uso desse tipo de conteúdo e não foi algo pontual, foi utilizado que para entrar na pontuação a contagem por tipo de conteúdo deve ser pelo menos de 10% por cento do total de conteúdos, em segundo lugar foi pontuado com maior peso conteúdos do tipo tarefas/s.exs. Por último para critério de desempate é somado um multiplicador bem pequeno baseado no total de conteúdos de cada tipo subidos do professor.")
+
+
+
 expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(catego4m03top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
@@ -290,9 +295,12 @@ expander_cont.dataframe(catego4m03)
 """
 
 """
+expander_cont = st.expander(" Como foi obitida a pontuação -> (clique aqui 🖱️)")
+expander_cont.write("Nesse parâmetro foram somados os logs de interação que dizem a respeito a: (1) Comentários nos fórums. (2) Feedbacks escritos nas atividades. (3) Pedir revisão da atividade para o aluno. (4) Escrever no pedido de revisão do aluno")
 expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(catego4m04top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(catego4m04)
 #catego4m04
 #catego4m04top20
+#'GIVE_FEEDBACK','ASK_REVISION','CREATE_TEXT_REVISION_FEEDBACK','ADD_COMMENT'
