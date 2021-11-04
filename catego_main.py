@@ -28,7 +28,7 @@ st.sidebar.image(image,caption='Eduqo - Plataforma QMágico',use_column_width=Tr
 st.sidebar.markdown('Feito por: Gabriel Philot (Tio Gibbs)')
 st.sidebar.write('#### Links associados com o projeto')
 st.sidebar.write('####')
-st.sidebar.write("##### [Github](https://github.com/GabrielMPhilot/categorias_premiadas)")
+#st.sidebar.write("##### [Github](https://github.com/GabrielMPhilot/categorias_premiadas)")
 st.sidebar.write('####')
 st.sidebar.write("##### [G.Slides](https://docs.google.com/presentation/d/1hSyXkuVwCf6QhHEPrmEeFrLOoDUxYwiqK0h_4Ck_azE/edit#slide=id.gacf8bfa375_1_201)")
 st.sidebar.write('#')
@@ -304,3 +304,5 @@ expander_cont.dataframe(catego4m04)
 #catego4m04
 #catego4m04top20
 #'GIVE_FEEDBACK','ASK_REVISION','CREATE_TEXT_REVISION_FEEDBACK','ADD_COMMENT'
+
+

@@ -157,3 +157,5 @@ var_04_04 = catego4m04.columns.values.tolist()
 catego4m04 = catego4m04.rename(columns={var_04_04[2]: "N° de Interações com alunos"}).reset_index(drop=True)
 catego4m04 = catego4m04.sort_values("N° de Interações com alunos", ascending=False, inplace=False).reset_index(drop=True)
 catego4m04top20 = catego4m04.head(20).reset_index(drop=True)
+
+
