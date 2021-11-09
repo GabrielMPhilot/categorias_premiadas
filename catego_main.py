@@ -267,7 +267,7 @@ expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(catego4m02top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(catego4m02)
-st.write('#### Resultado de nosso modelo (Todos namespaces):',get_table_download_link(catego4m02), unsafe_allow_html=True)
+st.write('###',get_table_download_link(catego4m02), unsafe_allow_html=True)
 #catego4m02
 #catego4m02top20
 """
