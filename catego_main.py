@@ -16,7 +16,7 @@ st.image('imagem.png')
 # Titulo
 #st.write('### 💾 Dados extraídos de:',data_inicial,"  a",data_final)
 
-
+a=2
 
 st.image('imagem2.png')
 st.write('### 💾 Dados extraídos de:',data_inicial,"  até",data_final)

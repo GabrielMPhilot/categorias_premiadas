@@ -168,10 +168,6 @@ def df_set_plotly(data_frame):
             df=df.append(new_row, ignore_index=True)
      return df
     
- 
-    
-
-    
 
 
 

@@ -13,7 +13,7 @@ datas=datas.replace(np.inf, 0)
 datas_list=datas["0"].tolist()
 data_inicial = datas_list[0]
 data_final = datas_list[1]
-
+b=2
 # Recebendo as Tabelas e dataframes independentes (caso da tabela da categoria 4)
 
 t_catego_01=pd.read_csv("./csvs/tab_01.csv")
