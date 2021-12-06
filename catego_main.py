@@ -64,7 +64,7 @@ expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m01)
 
 """
-##### 🥇 Visualização por segumento
+##### 🥇 Visualização por seguimento
 """
 
 if st.checkbox('<-   (clique aqui 🖱️) '):
@@ -96,7 +96,7 @@ expander_cont.table(cat_01_m02top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m02)
 """
-##### 🥇 Visualização por segumento
+##### 🥇 Visualização por seguimento
 """
 
 if st.checkbox('<-  (clique aqui 🖱️) '):
@@ -129,7 +129,7 @@ expander_cont.table(cat_01_m03top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m03)
 """
-##### 🥇 Visualização por segumento
+##### 🥇 Visualização por seguimento
 """
 
 if st.checkbox('<-- (clique aqui 🖱️) '):
