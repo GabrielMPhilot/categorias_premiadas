@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 from computer.funcomputer import *
-
+ala = 22
 # Intervalo de datas
 datas=pd.read_csv("./csvs/interval_datas.csv")
 del datas['Unnamed: 0']
@@ -190,3 +190,5 @@ seguimento2 = recebe_seg_tempos[segui].drop_duplicates().tolist()
 # Catego 2
 colunas_segui3 = recebe_seg_qtotal.columns.values.tolist()
 seguimento3 = recebe_seg_qtotal[segui].drop_duplicates().tolist()
+
+ala = 23
