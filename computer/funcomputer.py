@@ -1,6 +1,7 @@
 
 # Funçoes
 from re import T
+import numpy as np
 import pandas as pd
 from datetime import date, timedelta
 import time
@@ -169,9 +170,35 @@ def df_set_plotly(data_frame):
      return df
     
 
+# spliting dataframe based on a value of a column    
+def split_dataframe(dataframe, column_name1="a2",var1="a", column_name2="b2", var2="b"):
+    """Spliting the dataframe by variable(s)
+
+    Args:
+        dataframe(pd.DataFrame): dataframe to use
+        column value (any): variable to use
+        arbitary second column value (any): variable to use
+
+    Returns:
+        pd.Dataframe: splited dataframe
+    """
+    df = pd.DataFrame()
+    if column_name2+var2=="b2b":
+        df = dataframe[(dataframe[column_name1]==var1)].reset_index(drop=True)
+        return df
+    else:
+        df = dataframe[(dataframe[column_name1]==var1) & (dataframe[column_name2]==var2)].reset_index(drop=True)
+        return df
 
 
 
-
-
+def get_table_download_link(df):
+    """Generates a link allowing the data in a given panda dataframe to be downloaded
+    in:  dataframe
+    out: href string
+    """
+    csv = df.to_csv(index=False)
+    b64 = base64.b64encode(csv.encode()).decode()  # some strings <-> bytes conversions necessary here
+    href = f'<a href="data:file/csv;base64,{b64}" download="listanamespaces.csv">Clique aqui para baixar o CSV</a>'
+    return href
 

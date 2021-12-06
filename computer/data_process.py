@@ -27,6 +27,24 @@ t_catego_02=t_catego_02.replace(np.inf, 0)
 t_catego_03=pd.read_csv("./csvs/tab_03.csv")
 del t_catego_03['Unnamed: 0']
 t_catego_03=t_catego_03.replace(np.inf, 0)
+
+
+# Recebendo categorias escolares
+
+recebe_seg_cont = pd.read_csv("./csvs/seg_tab_conteudos.csv")
+del recebe_seg_cont['Unnamed: 0']
+recebe_seg_cont=recebe_seg_cont.replace(np.inf, 0)
+
+recebe_seg_tempos = pd.read_csv("./csvs/seg_tab_tempo.csv")
+del recebe_seg_tempos['Unnamed: 0']
+recebe_seg_tempos=recebe_seg_tempos.replace(np.inf, 0)
+
+recebe_seg_qtotal = pd.read_csv("./csvs/seg_tab_qtotal.csv")
+del recebe_seg_qtotal['Unnamed: 0']
+recebe_seg_qtotal = recebe_seg_qtotal.replace(np.inf, 0)
+
+
+
 # N° questões -> Número de questões corrigidas automaticamente
 # created -> Número de exércicios selecionados do banco
 
@@ -128,9 +146,7 @@ cat03m5 = cat03m5.rename(columns={var_03[4]: "N° de questoes corrigidas auto"})
 cat03m5 = cat03m5.sort_values("N° de questoes corrigidas auto", ascending=False, inplace=False).reset_index(drop=True)
 cat03m5top20 = cat03m5.head(20).reset_index(drop=True)
 
-
 ### Categoria 4
-
 
 # Média de exercícios selecionados, curados ou criados por mês
 catego4m01=t_catego_04_01.copy()
@@ -159,3 +175,18 @@ catego4m04 = catego4m04.sort_values("N° de Interações com alunos", ascending=
 catego4m04top20 = catego4m04.head(20).reset_index(drop=True)
 
 
+#### Seguimento
+# seguimento
+segui = "segmento"
+
+# Catego 1
+colunas_segui = recebe_seg_cont.columns.values.tolist()
+seguimento = recebe_seg_cont[segui].drop_duplicates().tolist()
+
+# Catego 3
+colunas_segui2 = recebe_seg_tempos.columns.values.tolist()
+seguimento2 = recebe_seg_tempos[segui].drop_duplicates().tolist()
+
+# Catego 2
+colunas_segui3 = recebe_seg_qtotal.columns.values.tolist()
+seguimento3 = recebe_seg_qtotal[segui].drop_duplicates().tolist()

@@ -34,7 +34,7 @@ st.sidebar.write("##### [G.Slides](https://docs.google.com/presentation/d/1hSyXk
 st.sidebar.write('#')
 #st.sidebar.write('#### Resultado da classificação de nosso modelo:',get_table_download_link(lista_resul), unsafe_allow_html=True)
 
-
+#recebe_seg_cont
 
 """
 
@@ -62,8 +62,27 @@ expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat_01_m01top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m01)
-#st.table(cat_01_m01)
 
+"""
+##### 🥇 Visualização por segumento
+"""
+
+if st.checkbox('<-   (clique aqui 🖱️) '):
+    """
+    ####  Escolha o seguimento
+    """
+    select3 = st.selectbox('',seguimento, key='1')
+    filtro_seg = split_dataframe(recebe_seg_cont,segui,select3)
+    filtro_seg = filtro_seg.sort_values(by=colunas_segui[2], ascending=False).reset_index(drop=True)
+    filtro_seg
+    left_column, right_column = st.columns(2)
+    pressed = left_column.button('Baixar csv c/filtro ')
+    if pressed:
+        right_column.write(get_table_download_link(filtro_seg), unsafe_allow_html=True)
+#st.table(cat_01_m01)
+"""
+
+"""
 """
 #### 📝 Média de exercícios realizados (A.As e S.Exer)
 """
@@ -76,7 +95,26 @@ expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat_01_m02top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m02)
+"""
+##### 🥇 Visualização por segumento
+"""
 
+if st.checkbox('<-  (clique aqui 🖱️) '):
+    """
+    ####  Escolha o seguimento
+    """
+    select4 = st.selectbox('',seguimento3, key='2')
+    filtro_seg3 = split_dataframe(recebe_seg_qtotal,segui,select4)
+    filtro_seg3 = filtro_seg3.sort_values(by=colunas_segui3[2], ascending=False).reset_index(drop=True)
+    filtro_seg3
+    left_column, right_column = st.columns(2)
+    pressed3 = left_column.button('  Baixar csv c/filtro ')
+    if pressed3:
+        right_column.write(get_table_download_link(filtro_seg3), unsafe_allow_html=True)
+#st.table(cat_01_m01)
+"""
+
+"""
 #st.table(cat_01_m02)
 
 """
@@ -90,7 +128,22 @@ expander_cont = st.expander(" (Top 20)  -> (clique aqui 🖱️)")
 expander_cont.table(cat_01_m03top20)
 expander_cont = st.expander(" Toda a tabela  -> (clique aqui 🖱️)")
 expander_cont.dataframe(cat_01_m03)
+"""
+##### 🥇 Visualização por segumento
+"""
 
+if st.checkbox('<-- (clique aqui 🖱️) '):
+    """
+    ####  Escolha o seguimento
+    """
+    select2 = st.selectbox('',seguimento2, key='3')
+    filtro_seg2 = split_dataframe(recebe_seg_tempos,segui,select2)
+    filtro_seg2 = filtro_seg2.sort_values(by=colunas_segui2[2], ascending=False).reset_index(drop=True)
+    filtro_seg2
+    left_column, right_column = st.columns(2)
+    pressed2 = left_column.button(' Baixar csv c/filtro ')
+    if pressed2:
+        right_column.write(get_table_download_link(filtro_seg2), unsafe_allow_html=True)
 #st.table(cat_01_m03)
 
 """
